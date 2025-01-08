@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-color-07cb79 theme-skin-light">
+<head>
+    <!-- Defines the character set for the webpage -->
+    <meta charset="utf-8">
+    <!-- Makes sure the website works properly in Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Ensures the page is responsive, meaning it adjusts to different screen sizes (mobile, tablet, desktop) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Title of the webpage, this appears in the tab at the top of the browser -->
+    <title>Mohamed</title>
+
+    <!-- Favicon (the small icon shown on the browser tab) -->
+    <link rel="shortcut icon" type="image/ico" href="img/favicon.png"/>
+
+    <!-- Adds custom fonts from Google -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Fredoka+One">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic">
+
+    <!-- Adds icon fonts to use custom icons -->
+    <link rel="stylesheet" type="text/css" href="fonts/map-icons/css/map-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/icomoon/style.css">
+
+    <!-- Adding extra styling (CSS) for different elements of the website like sliders, scrollbars, and media players -->
+    <link rel="stylesheet" type="text/css" href="js/plugins/jquery.bxslider/jquery.bxslider.css">
+    <link rel="stylesheet" type="text/css" href="js/plugins/jquery.customscroll/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" type="text/css" href="js/plugins/jquery.mediaelement/mediaelementplayer.min.css">
+    <link rel="stylesheet" type="text/css" href="js/plugins/jquery.fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" type="text/css" href="js/plugins/jquery.owlcarousel/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="js/plugins/jquery.owlcarousel/owl.theme.css">
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- Main style for the website -->
+    <link rel="stylesheet" type="text/css" href="colors/green.css"> <!-- Custom color theme -->
+
+    <!-- Compatibility for older browsers (like Internet Explorer 8) to make sure HTML5 and media queries work -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- A script that checks what features the user's browser supports (e.g., if their browser supports certain effects) -->
+    <script type="text/javascript" src="js/libs/modernizr.js"></script>
+</head>
+
+<body class="home header-has-img loading">
+
+    <!-- Mobile Navigation (for small screens like phones) -->
+    <div class="mobile-nav">
+        <!-- Button to close the mobile navigation -->
+        <button class="btn-mobile mobile-nav-close"><i class="rsicon rsicon-close"></i></button>
+        <!-- Menu items that show up on smaller screens -->
+        <div class="mobile-nav-inner">
+            <nav id="mobile-nav" class="nav">
+                <ul class="clearfix">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#references">References</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- End of mobile navigation -->
+
+    <!-- Sidebar (left menu with profile and additional info) -->
+    <div class="sidebar sidebar-fixed">
+        <!-- Button to close the sidebar -->
+        <button class="btn-sidebar btn-sidebar-close"><i class="rsicon rsicon-close"></i></button>
+
+        <div class="widget-area">
+            <!-- Profile information widget -->
+            <aside class="widget widget-profile">
+                <div class="profile-photo">
+                    <!-- This is the user's profile picture -->
+                    <img src="img/mohamed.jpeg" alt="Mohamed AL-Kaisi"/>
+                </div>
+                <div class="profile-info">
+                    <!-- User's name and position -->
+                    <h2 class="profile-title">Mohamed AL-Kaisi</h2>
+                    <h3 class="profile-position">Data Engineer</h3>
+                </div>
+            </aside>
+            <!-- End of profile widget -->
+
+            <!-- Search widget -->
+            <aside class="widget widget_search">
+                <h2 class="widget-title">Search</h2>
+                <form class="search-form">
+                    <!-- Input box to search the website -->
+                    <label class="ripple">
+                        <span class="screen-reader-text">Search for:</span>
+                        <input class="search-field" type="search" placeholder="Search">
+                    </label>
+                    <input type="submit" class="search-submit" value="Search">
+                </form>
+            </aside>
+            <!-- End of search widget -->
+
+            <!-- Contact form widget -->
+            <aside class="widget widget_contact">
+                <h2 class="widget-title">Contact Me</h2>
+                <!-- Form where users can enter their name, email, subject, and message -->
+                <form class="rsForm" action="php/mailsender.php" method="post">
+                    <div class="input-field">
+                        <label>Name</label>
+                        <input type="text" name="rsName" value="">
+                    </div>
+                    <div class="input-field">
+                        <label>Email</label>
+                        <input type="email" name="rsEmail" value="">
+                    </div>
+                    <div class="input-field">
+                        <label>Subject</label>
+                        <input type="text" name="rsSubject" value="">
+                    </div>
+                    <div class="input-field">
+                        <label>Message</label>
+                        <textarea rows="4" name="rsMessage"></textarea>
+                    </div>
+                    <!-- Checkbox for agreeing to the Privacy Policy -->
+                    <div class="check-field">
+                        <input type="checkbox" name="rsPivacyPolicy" id="rsPivacyPolicyWidget">
+                        <label for="rsPivacyPolicy">I have read the Privacy Policy note.</label>
+                    </div>
+                    <!-- Submit button to send the form -->
+                    <input class="rsFormSubmit btn btn-lg btn-primary" type="submit" value="Send">
+                </form>
+            </aside>
+            <!-- End of contact widget -->
+        </div>
+    </div>
+    <!-- End of sidebar -->
+
+    <!-- Main content area -->
+    <div class="wrapper">
+        <!-- Header section (where logo and menu are placed) -->
+        <header class="header">
+            <!-- Background image for the header -->
+            <div class="head-bg" style="background-image: url('img/uploads/rs-cover.jpg')"></div>
+            <div class="head-bar">
+                <div class="head-bar-inner">
+                    <div class="row">
+                        <div class="col-sm-3 col-xs-6">
+                            <!-- Logo that links back to the home page -->
+                            <a class="logo" href="index.html"><span>Curriculum vitae</span></a>
+                        </div>
+                        <div class="col-sm-9 col-xs-6">
+                            <!-- Main navigation menu -->
+                            <div class="nav-wrap">
+                                <nav id="nav" class="nav">
+                                    <ul class="clearfix">
+                                        <li><a href="#about">About</a></li>
+                                        <li><a href="#skills">Skills</a></li>
+                                        <li><a href="#portfolio">Portfolio</a></li>
+                                        <li><a href="#experience">Experience</a></li>
+                                        <li><a href="#references">References</a></li>
+                                        <li><a href="#contact">Contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- End of header -->
+
+        <!-- Contact Section (where users can fill out their contact information) -->
+        <section id="contact" class="section section-contact">
+            <div class="animate-up">
+                <h2 class="section-title">Contact Me</h2>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <!-- Form for contacting -->
+                        <div class="section-box contact-form">
+                            <h3>Feel free to contact me</h3>
+                            <form class="rsForm" action="php/mailsender.php" method="post">
+                                <div class="input-field">
+                                    <label>Name</label>
+                                    <input type="text" name="rsName" value="">
+                                </div>
+                                <div class="input-field">
+                                    <label>Email</label>
+                                    <input type="email" name="rsEmail" value="">
+                                </div>
+                                <div class="input-field">
+                                    <label>Subject</label>
+                                    <input type="text" name="rsSubject" value="">
+                                </div>
+                                <div class="input-field">
+                                    <label>Message</label>
+                                    <textarea rows="4" name="rsMessage"></textarea>
+                                </div>
+                                <div class="check-field">
+                                    <input type="checkbox" name="rsPivacyPolicy" id="rsPivacyPolicy">
+                                    <label for="rsPivacyPolicy">I have read the Privacy Policy note.</label>
+                                </div>
+                                <input class="rsFormSubmit btn btn-lg btn-primary" type="submit" value="Send">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <!-- Contact info with address, phone, and email -->
+                        <div class="section-box contact-info has-map">
+                            <ul class="contact-list">
+                                <li class="clearfix">
+                                    <strong>Address</strong>
+                                    <span>3 Orchard Pl, London SW1H 0BF</span>
+                                </li>
+                                <li class="clearfix">
+                                    <strong>Phone</strong>
+                                    <span><a href="tel:+12562548456">020 3038 8999</a></span>
+                                </li>
+                                <li class="clearfix">
+                                    <strong>E-mail</strong>
+                                    <span><a href="mailto:mohamed.al-kaisi@accenture.com">mohamed.al-kaisi@accenture.com</a></span>
+                                </li>
+                            </ul>
+                            <!-- Google Map showing the address -->
+                            <div id="map" data-latitude="51.5074" data-longitude="-0.1278"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of contact section -->
+    </div>
+    <!-- End of wrapper -->
+
+    <!-- Footer section (with social media links) -->
+    <footer class="footer">
+        <div class="footer-social">
+            <ul class="social">
+                <li><a href="https://www.facebook.com"><i class="rsicon rsicon-facebook"></i></a></li>
+                <li><a href="https://twitter.com"><i class="rsicon rsicon-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com"><i class="rsicon rsicon-linkedin"></i></a></li>
+                <li><a href="https://plus.google.com"><i class="rsicon rsicon-google-plus"></i></a></li>
+                <li><a href="https://dribbble.com"><i class="rsicon rsicon-dribbble"></i></a></li>
+                <li><a href="https://www.instagram.com"><i class="rsicon rsicon-instagram"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- End of footer -->
+
+    <!-- Scroll to top button -->
+    <a class="btn-scroll-top" href="#"><i class="rsicon rsicon-arrow-up"></i></a>
+
+    <!-- Preloader (animation that shows while the page is loading) -->
+    <div id="preloader">
+        <div class="preload-icon"><span></span><span></span></div>
+        <div class="preload-text">Loading ...</div>
+    </div>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript" src="js/plugins/jquery.mousewheel-3.0.6.pack.js"></script>
+    <script type="text/javascript" src="js/plugins/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/plugins/isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery.appear.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery.onepagenav.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery.bxslider/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery.customscroll/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery.mediaelement/mediaelement-and-player.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery.fancybox/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery.owlcarousel/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/site.js"></script>
+</body>
+</html>
